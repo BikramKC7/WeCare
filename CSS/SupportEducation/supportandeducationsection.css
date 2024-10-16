@@ -1,0 +1,121 @@
+.support-education {
+    text-align: center;
+    margin-bottom: 65px;
+    padding: 65px;
+}
+
+.support-education h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 65px;
+}
+
+.education-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.education-item {
+    background: linear-gradient(180deg, #7d7c7c, #424141);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.3s; /* Add transition for hover effect */
+    
+}
+
+.education-item p {
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.education-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.arrow-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E5873B;
+    position: absolute;
+}
+
+.arrow-circle button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: calc(4% - 10px);
+    bottom: -90px;
+}
+
+.right-arrow {
+    right: calc(6% - 10px);
+    bottom: -90px;
+}
+
+.learn-more-button {
+    background-color: #B6C370;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .education-wrapper {
+        flex-direction: column;
+    }
+
+    .education-item {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        bottom: -70px;
+    }
+
+    .learn-more-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .support-education h2 {
+        font-size: 28px;
+    }
+
+    .education-item p {
+        font-size: 14px;
+    }
+}

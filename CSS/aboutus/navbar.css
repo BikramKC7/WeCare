@@ -1,0 +1,103 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    background-color: #FCF8F4;
+}
+
+.company-logo {
+    width: 40px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add space between logo and company name */
+}
+
+ul span {
+    font-weight: 900;
+}
+
+.navbar {
+    padding: 65px;
+    background: linear-gradient(90deg, #EBB991, #E79A5B); /* Left to right gradient */
+    display: flex;
+    align-items: center; /* Vertically aligns items in the center */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.contactUs button {
+    border-radius: 50px;
+    background-color: #B6C370;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+.contactUs button:hover{
+    background-color: #E5873B; /* Button hover color */
+
+}    
+
+
+header {
+    background-color: #EEE6D8;
+}
+
+/* Links in Contact Us */
+.contactUs a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flex for horizontal alignment */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-link.active {
+    font-weight: bold; /* Bold for active page */
+    color: white; /* Optional: Change the color for active link */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px; /* Reduce padding on smaller screens */
+        justify-content: center; /* Center items */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    nav ul li {
+        margin-right: 20px; /* Reduce spacing between items */
+        margin-bottom: 10px; /* Space below each item */
+    }
+
+    .contactUs button {
+        width: 100%; /* Full-width button on small screens */
+        margin-top: 10px; /* Add some space above */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin-right: 10px; /* Further reduce spacing on very small screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .company-logo {
+        width: 30px; /* Adjust logo size for small screens */
+    }
+}

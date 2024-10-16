@@ -1,0 +1,62 @@
+.navhero {
+    background: linear-gradient(135deg, #EDBF9A, #E68C43);
+}
+
+.section-container {
+    background: linear-gradient(90deg, #EBB991, #E79A5B);
+    padding: 65px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.section-line {
+    width: 2px;
+    background-color: #E7995A;
+    margin-right: 30px;
+    height: 200px;
+    min-height: 100px;
+    margin-left: 20px;
+}
+
+.section-content {
+    max-width: 700px;
+}
+
+.section-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center align content */
+        padding: 40px 20px; /* Reduce padding for mobile */
+    }
+
+    .section-line {
+        height: auto; /* Let height adjust based on content */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Space below the line */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .section-content {
+        max-width: 100%; /* Allow content to take full width */
+        text-align: center; /* Center text in smaller screens */
+    }
+
+    .section-content h2 {
+        font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+
+    .section-content p {
+        font-size: 14px; /* Adjust paragraph size for smaller screens */
+    }
+}

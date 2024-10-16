@@ -1,0 +1,75 @@
+/* Style for the section below the navbar */
+
+.navhero {
+    background: linear-gradient(135deg, #EDBF9A, #E68C43);
+}
+
+.section-container {
+    background: linear-gradient(90deg, #EBB991, #E79A5B); /* Left to right gradient */
+    padding: 65px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Vertical line */
+.section-line {
+    width: 2px;
+    background-color: #E7995A;
+    margin-right: 20px;
+    height: 200px; /* Adjust to content */
+    min-height: 100px; /* Ensures the line has some height */
+}
+
+/* Heading and content */
+.section-content {
+    max-width: 700px;
+    flex: 1; /* Allow it to take remaining space */
+}
+
+.section-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .section-container {
+        padding: 40px; /* Reduce padding on smaller screens */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items in the column */
+    }
+
+    .section-line {
+        height: 100px; /* Adjust line height on smaller screens */
+        margin: 20px 0; /* Adjust margins for vertical stacking */
+    }
+
+    .section-content h2 {
+        font-size: 28px; /* Smaller heading on mobile */
+    }
+
+    .section-content p {
+        font-size: 14px; /* Smaller paragraph text on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-container {
+        padding: 20px; /* Further reduce padding on extra small screens */
+    }
+
+    .section-content h2 {
+        font-size: 24px; /* Even smaller heading */
+    }
+
+    .section-content p {
+        font-size: 12px; /* Smaller paragraph text */
+    }
+}

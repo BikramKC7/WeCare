@@ -1,0 +1,178 @@
+/* Support and Education Section */
+.support-education {
+    text-align: center;
+    margin: 0; /* No additional margin */
+    padding: 65px;
+}
+
+.support-education h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 65px;
+}
+
+.education-wrapper {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    position: relative; /* Positioning for arrow circles */
+    gap: 20px; /* Space between education cards */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.education-item {
+    background: #A0B55C; /* Card background color */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px; /* Space between cards */
+    width: 200px; 
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.education-item img {
+    width: 100px; /* Width of the person image */
+    height: 100px; /* Height of the person image */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.education-item h3 {
+    font-size: 20px; /* Name font size */
+    margin: 10px 0; /* Space around the name */
+}
+
+.education-item .designation {
+    font-size: 14px; /* Designation font size */
+    color: white; /* Designation text color */
+    margin-bottom: 10px; /* Space below the designation */
+}
+
+.education-item p {
+    font-size: 16px; /* Set font size */
+    font-weight: normal; /* Normal font weight */
+    color: white; /* Text color */
+    margin: 10px 0; /* Space above and below the paragraph */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+/* Arrow Circle Style */
+.arrow-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Diameter of the circle */
+    height: 40px; /* Diameter of the circle */
+    border-radius: 50%; /* Round shape */
+    background-color: #E5873B; /* Circle background color */
+    position: absolute; /* Positioning for absolute elements */
+}
+
+.arrow-circle button {
+    background: transparent; /* Transparent background */
+    color: white;
+    border: none; /* No border */
+    font-size: 20px; /* Size of the arrow */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Positioning arrows below cards */
+.left-arrow {
+    left: calc(5% - 20px); /* Position left */
+    bottom: -90px; /* Move it below the cards */
+}
+
+.right-arrow {
+    right: calc(7% - 20px); 
+    bottom: -90px; /* Move it below the cards */
+}
+
+/* Button for Learn More */
+.learn-more-button {
+    background-color: #B6C370; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above the button */
+}
+
+.lasttext {
+    text-align: justify; /* Justify the text */
+    margin: 65px; /* Add some margin */
+    padding: 20px; /* Add padding around the text */
+    line-height: 1.9;    
+}
+
+.lasttext h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.see-more-button {
+    background-color: #B6C370; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 15px; /* Space above the button */
+    font-size: 16px; /* Font size for the button text */
+}
+
+/* Optional: Add a hover effect */
+.see-more-button:hover {
+    background-color: #A0B55C; /* Darker shade on hover */
+}
+
+.education-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-item {
+        width: 90%; /* Full width on small screens */
+        margin: 10px 0; /* Space between cards on small screens */
+    }
+
+    .arrow-circle {
+        width: 30px; /* Smaller arrow circles */
+        height: 30px; /* Smaller arrow circles */
+    }
+
+    .arrow-circle button {
+        font-size: 16px; /* Smaller arrow size */
+    }
+
+    .support-education h2 {
+        font-size: 28px; /* Reduce header size on smaller screens */
+    }
+
+    .lasttext h2 {
+        font-size: 30px; /* Reduce last text header size */
+    }
+}
+
+@media (max-width: 480px) {
+    .education-item {
+        margin: 10px 5px; /* Adjust margins on very small screens */
+    }
+
+    .education-item img {
+        width: 80px; /* Smaller image for small screens */
+        height: 80px; /* Maintain aspect ratio */
+    }
+
+    .learn-more-button, .see-more-button {
+        width: 100%; /* Full-width buttons on small screens */
+    }
+}

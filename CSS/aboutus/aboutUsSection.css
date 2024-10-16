@@ -1,0 +1,110 @@
+.about-us-section {
+    display: flex;
+    padding: 65px;
+    justify-content: space-between; /* Create space between left and right sides */
+    align-items: center; /* Vertically center content */
+    height: auto;
+}
+
+.about-us-section .left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image */
+    padding-right: 20px; /* Space between image and text */
+}
+
+.about-us-section .left-side img {
+    max-width: 100%; /* Adjusted to ensure it scales well */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add a border radius for better aesthetics */
+}
+
+.about-us-section .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Vertically center content */
+}
+
+.about-us-section .main-heading {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2; /* Controls space between the lines */
+    color: black;
+}
+
+.about-us-section .orange-text {
+    color: orange; /* Specific color for "About Us" */
+}
+
+.about-us-section .subtext {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-us-section .feature-button {
+    border-radius: 50px;
+    background-color: #B6C370;
+    color: white;
+    font-weight: bold;
+    width: 150px; /* Set a fixed width */
+    border: none;
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.aboutustext {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .about-us-section {
+        flex-direction: column; /* Stack sections on mobile devices */
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .about-us-section .left-side {
+        padding-right: 0; /* No padding on the right for mobile */
+        margin-bottom: 20px; /* Space between image and text */
+    }
+
+    .about-us-section .right-side {
+        padding-left: 0; /* Remove left padding for mobile */
+    }
+
+    .about-us-section .main-heading {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .aboutustext {
+        font-size: 32px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-section {
+        padding: 15px; /* Further reduce padding on extra small devices */
+    }
+
+    .about-us-section .main-heading {
+        font-size: 24px; /* Further adjust font size */
+    }
+
+    .aboutustext {
+        font-size: 28px; /* Further adjust font size */
+    }
+
+    .about-us-section .subtext {
+        font-size: 14px; /* Adjust font size for subtext */
+    }
+
+    .about-us-section .feature-button {
+        width: 100%; /* Make button full-width on small screens */
+    }
+}

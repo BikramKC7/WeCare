@@ -1,0 +1,102 @@
+.might-help {
+    padding: 65px;
+}
+
+.might-help h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.healing-text h3 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.help-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.healing-text {
+    margin-top: 70px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.help-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.help-card {
+    background-color: #B6C370;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 290px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.help-card img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 50%;
+    height: auto;
+}
+
+.help-card p {
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.help-card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .might-help {
+        padding: 30px;
+    }
+
+    .might-help h2 {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .healing-text h3 {
+        font-size: 30px;
+    }
+
+    .help-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .healing-text {
+        margin-right: 0;
+    }
+
+    .help-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .help-card {
+        width: 100%;
+        max-width: 290px;
+        margin-bottom: 20px;
+    }
+}

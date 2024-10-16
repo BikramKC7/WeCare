@@ -1,0 +1,62 @@
+.therapy-container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.therapy-container h1 {
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.therapy-card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.therapy-card {
+    border-radius: 5px;
+    padding: 20px;
+    width: 48%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.therapy-card.card-1,
+.therapy-card.card-4 {
+    background-color: #B6C370;
+    color: white;
+}
+
+.therapy-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    opacity: 1;
+    filter: none;
+}
+
+.therapy-card h2 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.therapy-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.therapy-card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .therapy-card {
+        width: 100%;
+    }
+}

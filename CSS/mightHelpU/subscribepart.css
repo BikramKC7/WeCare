@@ -1,0 +1,80 @@
+.subscribe-section {
+    background-color: #B6C370;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.subscribe-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subscribe-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 250px;
+    outline: none;
+    background-color: #B6C370;
+}
+
+.subscribe-button {
+    background-color: #E5873B;
+    color: white;
+    border: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #D4752B;
+}
+
+@media (max-width: 768px) {
+    .subscribe-section {
+        padding: 30px 15px; /* Reduce padding on smaller screens */
+    }
+
+    .subscribe-section h2 {
+        font-size: 28px; /* Smaller heading font size */
+    }
+
+    .subscribe-section p {
+        font-size: 16px; /* Smaller paragraph font size */
+    }
+
+    .subscribe-form {
+        flex-direction: column; /* Stack input and button vertically */
+        align-items: center; /* Center items */
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 100%; /* Full width input on smaller screens */
+        max-width: 300px; /* Limit max width */
+    }
+
+    .subscribe-button {
+        width: 100%; /* Full width button on smaller screens */
+        max-width: 300px; /* Limit max width */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+}

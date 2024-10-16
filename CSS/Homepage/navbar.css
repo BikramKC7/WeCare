@@ -1,0 +1,88 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    background-color: #EDE7D2;
+}
+
+.company-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+ul span {
+    font-weight: 900;
+}
+
+.navbar {
+    padding: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactUs button {
+    border-radius: 50px;
+    background-color: #B6C370;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px; 
+    margin: 0;
+}
+
+.contactUs button:hover{
+    background-color: #E5873B; /* Button hover color */
+
+}    
+
+.contactUs a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: #EEE6D8;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px; /* Reduce padding for mobile */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul li {
+        margin-right: 30px; /* Reduce margin on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        padding: 0; /* Remove padding */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add margin between items */
+    }
+}

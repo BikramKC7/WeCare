@@ -1,0 +1,117 @@
+/* Support and Education Section */
+.support-education {
+    text-align: center;
+    margin: 0px; /* No additional margin */
+    padding: 65px;
+}
+
+.support-education h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.education-wrapper {
+    display: flex;
+    justify-content: center; 
+    position: relative; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.education-item {
+    background-color: #E5873B; /* Card background color */
+    color: white; /* Text color */
+    padding: 20px;
+    border-radius: 10px;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px; /* Space between cards */
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.education-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+}
+
+.education-item p {
+    font-size: 16px; /* Set font size */
+    font-weight: normal; /* Normal font weight */
+    color: white; /* Text color */
+    margin: 10px 0; /* Space above and below the paragraph */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+/* Arrow Circle Style */
+.arrow-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Diameter of the circle */
+    height: 40px; /* Diameter of the circle */
+    border-radius: 50%; /* Round shape */
+    background-color: #E5873B; /* Circle background color */
+    position: absolute; /* Positioning for absolute elements */
+}
+
+.arrow-circle button {
+    background: transparent; /* Transparent background */
+    color: white; /* Arrow color */
+    border: none; /* No border */
+    font-size: 20px; /* Size of the arrow */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Positioning arrows below cards */
+.left-arrow {
+    left: calc(4% - 20px); /* Position left */
+    bottom: -90px; /* Move it below the cards */
+}
+
+.right-arrow {
+    right: calc(6% - 20px); 
+    bottom: -90px; /* Move it below the cards */
+}
+
+/* Button for Learn More */
+.learn-more-button {
+    background-color: #B6C370; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above the button */
+}
+
+.education-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .education-wrapper {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center; /* Center align the cards */
+    }
+
+    .education-item {
+        margin: 10px 0; /* Space between cards when stacked */
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    .learn-more-button {
+        width: 100%; /* Full width for button */
+    }
+
+    .arrow-circle {
+        width: 30px; /* Smaller circle on mobile */
+        height: 30px; /* Smaller circle on mobile */
+        font-size: 16px; /* Smaller arrow on mobile */
+    }
+}

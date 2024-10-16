@@ -1,0 +1,39 @@
+.quote-rectangle {
+    background: linear-gradient(135deg, #EDBF9A, #E68C43); /* Gradient background */
+    padding: 20px; /* Space around the text */
+    margin: 20px 0; /* Space above and below */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-radius: 10px; /* Optional: Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+}
+
+.quote-text {
+    font-style: italic; /* Italic text */
+    text-align: center; /* Center text */
+    color: #333; /* Dark text color */
+    font-size: 18px; /* Font size */
+    max-width: 600px; /* Limit the max width of the text */
+    line-height: 1.5; /* Space between lines */
+    padding: 10px; /* Optional: Padding for better text spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quote-text {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 15px; /* Slightly larger padding for readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-rectangle {
+        padding: 15px; /* Reduce padding on very small screens */
+        margin: 15px 0; /* Adjust margin for small screens */
+    }
+
+    .quote-text {
+        font-size: 14px; /* Further adjust font size for very small screens */
+    }
+}
