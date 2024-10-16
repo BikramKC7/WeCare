@@ -84,8 +84,32 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
-// Function to validate phone format (basic validation)
-function validatePhone(phone) {
-    const re = /^\+?[0-9]{7,15}$/;
-    return re.test(String(phone));
-}
+var swiper = new Swiper(".container", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".arrow-circle left-arrow",
+      prevEl: ".arrow-circle right-arrow",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });

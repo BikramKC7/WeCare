@@ -31,7 +31,7 @@
     text-align: center;
     margin: 0 10px;
     transition: transform 0.3s; /* Add transition for hover effect */
-    
+    width: 100%; /* Ensure full width of the item */
 }
 
 .education-item p {
@@ -42,7 +42,7 @@
     line-height: 1.5;
 }
 
-.education-item a{
+.education-item a {
     text-decoration: none;
     color: white;
 }
@@ -64,6 +64,11 @@
     border: none;
     font-size: 20px;
     cursor: pointer;
+    transition: color 0.3s; /* Add transition for color change */
+}
+
+.arrow-circle button:hover {
+    color: #FFD700; /* Change color on hover */
 }
 
 .left-arrow {
@@ -84,6 +89,11 @@
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s; /* Transition for button hover effect */
+}
+
+.learn-more-button:hover {
+    background-color: #A0B557; /* Darken background on hover */
 }
 
 .education-item:hover {

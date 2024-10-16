@@ -35,6 +35,8 @@
     border-radius: 10px;
     margin-top: 5px;
     background-color: #EEE6D8;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 .arrow {

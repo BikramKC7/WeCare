@@ -103,52 +103,53 @@
         </div>
     </section>
 
-<!-- Support and Education Section -->
-<section class="support-education">
-    <h2>Support and Education</h2>
-    <div class="container">
-        <div class="education-wrapper">
-            <!-- Card 1 -->
-            <div class="education-item">
-                <h3>Stress Management</h3>
-                <p>Learn techniques to effectively manage stress and improve your overall well-being.</p>
-                <button class="learn-more-button"><a href="supportEducation.html">Learn More</a></button>
-            </div>
-            <!-- Card 2 -->
-            <div class="education-item">
-                <h3>Anxiety Relief</h3>
-                <p>Discover methods to alleviate anxiety and regain control over your mental health.
-                </p>
-                <button class="learn-more-button"><a href="supportEducation.html">Learn More</a></button>
-                
-            </div>
-            <!-- Card 3 -->
-            <div class="education-item">
-                <h3>Depression Support</h3>
-                <p>Receive compassionate guidance to help you navigate the challenges of depression.
-                </p>
-                <button class="learn-more-button"><a href="supportEducation.html">Learn More</a></button>
-                
-            </div>
-            <!-- Card 4 -->
-            <div class="education-item">
-                <h3>Mindfulness Training</h3>
-                <p>Practice mindfulness techniques to stay grounded and enhance mental clarity.
-                </p>
-                <button class="learn-more-button"><a href="supportEducation.html">Learn More</a></button>
-                
-            </div>
-            <div class="arrows-container">
-                <div class="arrow-circle left-arrow">
-                    <button class="prev-arrow">←</button>
+    <section class="support-education">
+        <h2>Support and Education</h2>
+        <div class="container">
+            <div class="education-wrapper">
+                <!-- Card 1 -->
+                <div class="education-item">
+                    <h3>Stress Management</h3>
+                    <p>Learn techniques to effectively manage stress and improve your overall well-being.</p>
+                    <button class="learn-more-button"><a href="supportEducation.html">Learn More</a></button>
                 </div>
-                <div class="arrow-circle right-arrow">
-                    <button class="next-arrow">→</button>
+                <!-- Card 2 -->
+                <div class="education-item">
+                    <h3>Anxiety Relief</h3>
+                    <p>Discover methods to alleviate anxiety and regain control over your mental health.
+                    </p>
+                    <button class="learn-more-button"><a href="supportEducation.html">Learn More</a></button>
+                    
+                </div>
+                <!-- Card 3 -->
+                <div class="education-item">
+                    <h3>Depression Support</h3>
+                    <p>Receive compassionate guidance to help you navigate the challenges of depression.
+                    </p>
+                    <button class="learn-more-button"><a href="supportEducation.html">Learn More</a></button>
+                    
+                </div>
+                <!-- Card 4 -->
+                <div class="education-item">
+                    <h3>Mindfulness Training</h3>
+                    <p>Practice mindfulness techniques to stay grounded and enhance mental clarity.
+                    </p>
+                    <button class="learn-more-button"><a href="supportEducation.html">Learn More</a></button>
+                    
+                </div>
+                <div class="arrows-container">
+                    <div class="arrow-circle left-arrow">
+                        <button class="prev-arrow" onclick="updateVisibility(this)">←</button>
+                    </div>
+                    <div class="arrow-circle right-arrow">
+                        <button class="next-arrow" onclick="scrollCards(1)">→</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    
+    
 
 <!-- Might Help U? Section -->
 <section class="might-help">
@@ -273,7 +274,7 @@
 </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     
 </body>
