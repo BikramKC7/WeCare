@@ -1,40 +1,40 @@
 .about-us-section {
     display: flex;
     padding: 65px;
-    justify-content: space-between; /* Create space between left and right sides */
-    align-items: center; /* Vertically center content */
+    justify-content: space-between; 
+    align-items: center; 
     height: auto;
 }
 
 .about-us-section .left-side {
     flex: 1;
     display: flex;
-    justify-content: center; /* Center the image */
-    padding-right: 20px; /* Space between image and text */
+    justify-content: center; 
+    padding-right: 20px; 
 }
 
 .about-us-section .left-side img {
-    max-width: 100%; /* Adjusted to ensure it scales well */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Add a border radius for better aesthetics */
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
 }
 
 .about-us-section .right-side {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Vertically center content */
+    flex-direction: column; 
+    justify-content: center; 
 }
 
 .about-us-section .main-heading {
     font-size: 36px;
     font-weight: bold;
-    line-height: 1.2; /* Controls space between the lines */
+    line-height: 1.2; 
     color: black;
 }
 
 .about-us-section .orange-text {
-    color: orange; /* Specific color for "About Us" */
+    color: orange; 
 }
 
 .about-us-section .subtext {
@@ -65,46 +65,47 @@
 
 @media (max-width: 768px) {
     .about-us-section {
-        flex-direction: column; /* Stack sections on mobile devices */
-        padding: 20px; /* Reduce padding on smaller screens */
+        flex-direction: column;
+        padding: 20px; 
     }
 
     .about-us-section .left-side {
-        padding-right: 0; /* No padding on the right for mobile */
-        margin-bottom: 20px; /* Space between image and text */
+        padding-right: 0; 
+        margin-bottom: 20px; 
     }
 
     .about-us-section .right-side {
-        padding-left: 0; /* Remove left padding for mobile */
+        padding-left: 0; 
     }
 
     .about-us-section .main-heading {
-        font-size: 28px; /* Adjust font size for smaller screens */
+        font-size: 28px; 
     }
 
     .aboutustext {
-        font-size: 32px; /* Adjust font size for smaller screens */
+        font-size: 32px; 
     }
 }
 
 @media (max-width: 480px) {
     .about-us-section {
-        padding: 15px; /* Further reduce padding on extra small devices */
+        padding: 15px; 
     }
+    
 
     .about-us-section .main-heading {
-        font-size: 24px; /* Further adjust font size */
+        font-size: 24px; 
     }
 
     .aboutustext {
-        font-size: 28px; /* Further adjust font size */
+        font-size: 28px; 
     }
 
     .about-us-section .subtext {
-        font-size: 14px; /* Adjust font size for subtext */
+        font-size: 14px; 
     }
 
     .about-us-section .feature-button {
-        width: 100%; /* Make button full-width on small screens */
+        width: 100%; 
     }
 }

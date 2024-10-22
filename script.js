@@ -1,24 +1,22 @@
 function toggleAnswer(questionElement) {
-    const answerElement = questionElement.nextElementSibling; // Get the corresponding answer
-    const arrow = questionElement.querySelector('.arrow'); // Get the arrow image
+    const answerElement = questionElement.nextElementSibling; 
+    const arrow = questionElement.querySelector('.arrow'); 
 
     // Toggle answer display
     if (answerElement.style.display === "block") {
-        answerElement.style.display = "none"; // Hide answer
-        arrow.src = "Media/downarrow.png"; // Change arrow to down
+        answerElement.style.display = "none"; 
+        arrow.src = "Media/downarrow.png"; 
     } else {
-        answerElement.style.display = "block"; // Show answer
-        arrow.src = "Media/uparrow.png"; // Change arrow to up
+        answerElement.style.display = "block"; 
+        arrow.src = "Media/uparrow.png"; 
     }
 }
 
-
-// Get all the nav links
 const navLinks = document.querySelectorAll('.nav-link');
 
 // Function to handle adding the 'active' class
 function activateCurrentPage() {
-    // Get the current page path
+    
     const currentPage = window.location.pathname.split("/").pop();
 
     // Loop through all the links and check if the href matches the current page
